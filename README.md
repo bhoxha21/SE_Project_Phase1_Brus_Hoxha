@@ -144,3 +144,62 @@ Our administrators wield powerful tools through a custom-built Admin Panel, acce
 - The PersonalityQuestion Class contains attributes for personality quiz questions and options, enriching our user engagement features.
 - The Recommendation Class stores personalized recommendations for users, enhancing their exploration of our platform's offerings.
 - Relationships between classes are carefully defined to ensure seamless interactions and data management.
+
+# Phase IV: Software Testing
+**Deadline:** May 6, 11:59 PM
+
+## Introduction to Testing:
+Software testing is a critical process in evaluating software to identify defects or bugs. It ensures the reliability and correctness of the software, contributing to its overall quality and user satisfaction.
+
+## Purpose of Testing:
+Testing aims to identify defects early in the development process and verify that software components perform as intended. By detecting issues early, testing helps in reducing the cost and effort required for fixing defects later in the development cycle.
+
+## Focus on Testing a Single Component:
+For this phase, we'll focus on testing specific components of the software to ensure their functionality, reliability, and correctness. We'll select critical functions and modules from the codebase and create comprehensive test cases to verify their behavior.
+
+## Preparing Test Cases:
+To prepare test cases, we'll cover various scenarios including normal inputs, edge cases, and invalid inputs for each selected component. This ensures thorough testing and validation of the software's functionality.
+
+## Choosing Testing Frameworks:
+For unit testing in JavaScript, we'll use Jest, a popular testing framework known for its simplicity and effectiveness. Jest provides powerful assertion utilities and mocking capabilities, making it suitable for testing JavaScript code.
+
+### Setting up Jest:
+To set up Jest, the following steps were followed:
+
+1. **Installation of Node.js:** Ensured that Node.js is installed on the system, providing the runtime environment for executing JavaScript code outside the browser.
+
+2. **Creation of package.json:** Initialized a Node.js project by executing the following command in the terminal:
+   ```
+   npm init –y
+   ```
+   This command created a package.json file with default configurations, allowing management of dependencies and scripts for the project.
+
+3. **Installation of Jest:** With the project initialized, Jest was installed as a development dependency using the following command:
+   ```
+   npm --save-dev jest
+   ```
+   This command added Jest to the project's dependencies, ensuring it's available for testing purposes while keeping production dependencies separate.
+
+4. **Configuration of package.json:** Jest was specified as the test type in the package.json file under the "scripts" section:
+   ```
+   "scripts": {
+     "test": "jest"
+   }
+   ```
+   This configuration tells npm to run Jest when the "test" script is invoked. To execute the tests, Jest is run from the terminal with the command:
+   ```
+   npm test
+   ```
+
+## Writing Test Code:
+Test files were created for specific functions/modules. Here are examples of test cases written for these components:
+
+- **getanswers.test.js**
+- **getanswercat.test.js**
+- **getquestion.test.js**
+- **getquestionobj.test.js**
+- **randindexes.test.js**
+- **result.test.js**
+
+## Test Coverage:
+Achieving high test coverage is essential to ensure thorough testing of the software. It helps in identifying areas of the codebase that are not adequately tested, allowing improvement of the overall quality and reliability of the software.
