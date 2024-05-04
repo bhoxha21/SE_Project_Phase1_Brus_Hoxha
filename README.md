@@ -163,43 +163,103 @@ To prepare test cases, we'll cover various scenarios including normal inputs, ed
 ## Choosing Testing Frameworks:
 For unit testing in JavaScript, we'll use Jest, a popular testing framework known for its simplicity and effectiveness. Jest provides powerful assertion utilities and mocking capabilities, making it suitable for testing JavaScript code.
 
-### Setting up Jest:
-To set up Jest, the following steps were followed:
+## Setting up Jest:
+To set up Jest, follow these steps:
 
-1. **Installation of Node.js:** Ensured that Node.js is installed on the system, providing the runtime environment for executing JavaScript code outside the browser.
+**Installation of Node.js:** Ensure that Node.js is installed on your system. Node.js provides the runtime environment for executing JavaScript code outside the browser.
 
-2. **Creation of package.json:** Initialized a Node.js project by executing the following command in the terminal:
-   ```
-   npm init –y
-   ```
-   This command created a package.json file with default configurations, allowing management of dependencies and scripts for the project.
+**Creation of package.json:** Initialize a Node.js project by executing the following command in the terminal:
+```bash
+npm init -y
+```
+This command creates a package.json file with default configurations, allowing you to manage dependencies and scripts for your project.
 
-3. **Installation of Jest:** With the project initialized, Jest was installed as a development dependency using the following command:
-   ```
-   npm --save-dev jest
-   ```
-   This command added Jest to the project's dependencies, ensuring it's available for testing purposes while keeping production dependencies separate.
+**Installation of Jest:** With your project initialized, install Jest as a development dependency using the following command:
+```bash
+npm install --save-dev jest
+```
+This command adds Jest to your project's dependencies, ensuring that it's available for testing purposes while keeping your production dependencies separate.
 
-4. **Configuration of package.json:** Jest was specified as the test type in the package.json file under the "scripts" section:
-   ```
-   "scripts": {
-     "test": "jest"
-   }
-   ```
-   This configuration tells npm to run Jest when the "test" script is invoked. To execute the tests, Jest is run from the terminal with the command:
-   ```
-   npm test
-   ```
+**Configuration of package.json:** Specify Jest as the test type in the package.json file. Add the following configuration under the "scripts" section:
+```json
+"scripts": {
+  "test": "jest"
+}
+```
+This configuration tells npm to run Jest when the "test" script is invoked.
+
+To execute the tests, run Jest from the terminal. Since Jest is specified as the test type in package.json, you can simply run:
+```bash
+npm test
+```
+This command triggers Jest to execute all the tests defined in your test files. Jest displays the results, indicating whether each test passed, failed, or encountered errors.
 
 ## Writing Test Code:
-Test files were created for specific functions/modules. Here are examples of test cases written for these components:
+Test files for specific functions/modules have already been created:
 
-- **getanswers.test.js**
-- **getanswercat.test.js**
-- **getquestion.test.js**
-- **getquestionobj.test.js**
-- **randindexes.test.js**
-- **result.test.js**
+### getanswers.test.js:
+```javascript
+const getanswer = require("./getanswer");
+const questions = require("./db");
+
+test("get the answer for a given question at index (questions, question_index, answer_index)", () => {
+  const expectedAnswer = questions[2].answers[0].text;
+  expect(getanswer(questions, 2, 0)).toBe(expectedAnswer);
+});
+```
+
+### getanswercat.test.js:
+```javascript
+const getanswercat = require("./getanswercat");
+const questions = require("./db");
+const expectedAnsCat = questions[0].answers[0].cat;
+
+test("get the answer cat for a given question at index (questions, question_index, answer_index)", () => {
+  expect(getanswercat(questions, 2, 0)).toBe(expectedAnsCat);
+});
+```
+
+### getquestion.test.js:
+```javascript
+const getquestion = require("./getquestion");
+const questions = require("./db");
+const expectedQuestion = questions[2].question;
+
+test("get the question at a particular index (question, question_index)", () => {
+  expect(getquestion(questions, 2)).toBe(expectedQuestion);
+});
+```
+
+### getquestionobj.test.js:
+```javascript
+const getquestionobj = require("./getquestionobj");
+const questions = require("./db");
+const expectedQuestionobj = questions[0];
+
+test("get the question object at a particular index (question, question_index)", () => {
+  expect(getquestionobj(questions, 0)).toBe(expectedQuestionobj);
+});
+```
+
+### randindexes.test.js:
+```javascript
+const randindexes = require("./randindexes");
+
+test("generates 5 random question indexes", () => {
+  expect(randindexes()).toBe(5);
+});
+```
+
+### result.test.js:
+```javascript
+const result = require("./result");
+
+test("get the final result depending on the introvert/extrovert count (introvert, extrovert)", () => {
+  expect(result(3, 2)).toBe("You're an Introvert");
+});
+```
 
 ## Test Coverage:
-Achieving high test coverage is essential to ensure thorough testing of the software. It helps in identifying areas of the codebase that are not adequately tested, allowing improvement of the overall quality and reliability of the software.
+Achieving high test coverage is essential to ensure thorough testing of the software. It helps in identifying areas of the codebase that are not adequately tested, allowing us to improve the overall quality and reliability of the software.
+
+With these steps, we ensure that our software components are thoroughly tested, ensuring their reliability and correctness in the project.
