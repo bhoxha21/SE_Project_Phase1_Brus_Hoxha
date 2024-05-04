@@ -119,3 +119,23 @@ Visual representations of wireframes and mockups to be provided, showcasing the 
 ### e. Security Measures:
 
 Encryption of user data, secure authentication methods, and measures to prevent unauthorized access to user information will be implemented to safeguard user privacy and maintain the integrity of the platform.
+Phase III: Software Design and Modeling
+Deadline: April 1st, 2024, 23:59
+System Architecture:
+User Interface (UI):
+The User Interface (UI) component of ReadWave Explorer has been meticulously crafted using HTML, CSS, and JavaScript, meticulously coded to ensure a seamless and engaging user experience. Rather than relying on Wix, the website has been custom-built from scratch, leveraging these technologies to create visually stunning interfaces and intuitive navigation. This approach allows for greater flexibility and control over the design and functionality of the platform, tailored specifically to the needs of our users.
+Backend Services (Custom APIs and Functions):
+The backbone of ReadWave Explorer's functionality lies in its custom backend services, developed using PHP and JavaScript. These services handle critical tasks such as user authentication, personalized book recommendations, tracking reading progress, and managing community engagement features. By leveraging custom APIs and Functions, we ensure efficient data processing, seamless user interactions, and integration with external services, providing a robust and scalable solution for managing user data and system operations.
+Database (Custom Database Management):
+The heart of ReadWave Explorer's data management system is a custom-built database, designed using MySQL and integrated seamlessly into the platform. This database stores structured data related to user profiles, personality quiz responses, recommended books, and community interactions. Through careful design and optimization, we ensure real-time updates, efficient data retrieval, and seamless integration with other platform components, supporting our growth and enhancing user engagement.
+External APIs and Integrations:
+In addition to our custom-built components, ReadWave Explorer integrates with external APIs and third-party services to enhance its functionality and provide additional features to our users. This includes integration with book catalog APIs to expand our book database, social media APIs for sharing recommendations, and third-party services for hosting mini-games. These integrations enrich the user experience, providing access to diverse content and fostering engagement within our community.
+Admin Panel (Custom Dashboard):
+Our administrators wield powerful tools through a custom-built Admin Panel, accessible directly from our platform. This dashboard empowers them to manage content, monitor user activities, and administer the platform effectively. Integrated with our custom backend services, the Admin Panel enables seamless data management, content moderation, and system monitoring, empowering administrators to make informed decisions and drive platform growth.
+Component Diagram:
+Class Diagram
+The User Class now includes additional attributes such as userID, username, email, and preferences, facilitating personalized experiences for our users.
+The Book Class represents individual books with attributes such as bookID, title, author, and genre, enabling efficient organization and retrieval of book data.
+The PersonalityQuestion Class contains attributes for personality quiz questions and options, enriching our user engagement features.
+The Recommendation Class stores personalized recommendations for users, enhancing their exploration of our platform's offerings.
+Relationships between classes are carefully defined to ensure seamless interactions and data management.
