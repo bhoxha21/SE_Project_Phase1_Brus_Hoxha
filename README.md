@@ -164,7 +164,9 @@ In preparing test cases, I will encompass various scenarios, including normal in
 For unit testing in JavaScript, I will employ Jest, a renowned testing framework celebrated for its simplicity and efficacy. Jest offers robust assertion utilities and mocking capabilities, making it an ideal choice for testing JavaScript code.
 
 ## Setting up Jest:
-To set up Jest, I followed these steps:
+To set up
+
+ Jest, I followed these steps:
 
 **Installation of Node.js:** Ensure that Node.js is installed on your system. Node.js provides the runtime environment for executing JavaScript code outside the browser.
 
