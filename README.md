@@ -1,3 +1,5 @@
+Got it. Let's revise the documentation to accurately reflect the features of ReadWave. The final website will focus on displaying the top books of the week and a personality quiz to reveal personalized book recommendations. Here's the updated documentation:
+
 # Project Title: ReadWave
 
 **Project Creator:** Brus Hoxha  
@@ -6,16 +8,16 @@
 
 ## Project Details
 ### Problem Identification:
-Reading has become more of a chore for many individuals, losing the joy and excitement it once held. Recognizing this challenge, ReadWave Explorer aims to bring back the fun in reading by providing an engaging and personalized platform for book enthusiasts.
+Reading has become more of a chore for many individuals, losing the joy and excitement it once held. Recognizing this challenge, ReadWave aims to bring back the fun in reading by providing an engaging and personalized platform for book enthusiasts.
 
 ### Solution Proposal:
-ReadWave Explorer is not just a book recommendation system; it's a comprehensive platform designed to inspire a love for reading. Users will start their journey by creating personalized profiles, inputting preferences, and sharing a bit about their reading habits. The system will then guide them through engaging personality questions tailored to unveil their reading passions. Additionally, the platform will feature fun and educational book-related mini-games, including book trivia, word puzzles, and character quizzes. Users can earn rewards or unlock special features by participating and excelling in these games. The ultimate goal is to create an immersive reading experience, fostering a reading community dedicated to exploration and shared enthusiasm.
+ReadWave is not just a book recommendation system; it's a comprehensive platform designed to inspire a love for reading. Users will start their journey by creating personalized profiles, inputting preferences, and sharing a bit about their reading habits. The system will then guide them through engaging personality questions tailored to unveil their reading passions. Additionally, the platform will feature the top books of the week displayed on the website. The ultimate goal is to create an immersive reading experience, fostering a reading community dedicated to exploration and shared enthusiasm.
 
 ### Project Scope:
-The platform will include features for users to create profiles, input preferences, track reading progress, and engage in book-related mini-games. Users can also share book recommendations within the community, participate in reading challenges, and join discussions.
+The platform will include features for users to create profiles, input preferences, track reading progress, and engage in the personality quiz to receive personalized book recommendations. Users can also explore the top books of the week displayed on the website.
 
 ### Project Aim:
-ReadWave Explorer aims to transform reading into an adventurous and communal experience. By blending book recommendations with engaging content, community features, and book-related mini-games, the platform encourages users to read more, share their passion, and explore the diverse world of literature.
+ReadWave aims to transform reading into an adventurous and communal experience. By blending book recommendations with engaging content and community features, the platform encourages users to read more, share their passion, and explore the diverse world of literature.
 
 ## Roles and Tasks
 ### Roles:
@@ -27,16 +29,16 @@ ReadWave Explorer aims to transform reading into an adventurous and communal exp
 ### Tasks Distribution:
 **Planning Analysis:** Brus Hoxha
 - Conduct a detailed analysis of user requirements for an engaging book exploration platform.
-- Define a plan for developing features that encourage a love for reading, including book-related mini-games.
+- Define a plan for developing features that encourage a love for reading.
 
 **Design:** Brus Hoxha
 - Design an interactive and visually appealing platform interface.
-- Outline the system architecture to support community features, reading challenges, personalized profiles, and book-related mini-games.
+- Outline the system architecture to support community features, reading challenges, personalized profiles, and displaying the top books of the week.
 
 **Development:** Brus Hoxha
 - Implement the user profile creation feature with preferences input.
 - Develop the personality quiz feature for personalized book recommendations.
-- Create features for tracking reading progress, sharing recommendations, participating in reading challenges, and engaging in book-related mini-games.
+- Create features for tracking reading progress, displaying the top books of the week, and sharing recommendations.
 
 **Testing:** Brus Hoxha
 - Conduct rigorous testing to ensure an engaging user experience and seamless functionality.
@@ -50,7 +52,7 @@ Submission Deadline: 04.03.2024, 23:59 hours.
 
 ## Chosen Development Model: Agile
 
-**Justification:** Agile methodology is chosen for the development of ReadWave Explorer due to its iterative nature and adaptability to changes. Employing the Agile approach enables continuous improvement and responsiveness to evolving user needs within the project's scope.
+**Justification:** Agile methodology is chosen for the development of ReadWave due to its iterative nature and adaptability to changes. Employing the Agile approach enables continuous improvement and responsiveness to evolving user needs within the project's scope.
 
 ## User Requirements
 
@@ -123,16 +125,16 @@ Visual representations of wireframes and mockups to be provided, showcasing the 
 
 ## System Architecture:
 ### User Interface (UI):
-The User Interface (UI) component of ReadWave Explorer has been meticulously crafted using HTML, CSS, and JavaScript, meticulously coded to ensure a seamless and engaging user experience. Rather than relying on Wix, the website has been custom-built from scratch, leveraging these technologies to create visually stunning interfaces and intuitive navigation. This approach allows for greater flexibility and control over the design and functionality of the platform, tailored specifically to the needs of our users.
+The User Interface (UI) component of ReadWave has been meticulously crafted using HTML, CSS, and JavaScript, meticulously coded to ensure a seamless and engaging user experience. Rather than relying on Wix, the website has been custom-built from scratch, leveraging these technologies to create visually stunning interfaces and intuitive navigation. This approach allows for greater flexibility and control over the design and functionality of the platform, tailored specifically to the needs of our users.
 
 ### Backend Services (Custom APIs and Functions):
-The backbone of ReadWave Explorer's functionality lies in its custom backend services, developed using PHP and JavaScript. These services handle critical tasks such as user authentication, personalized book recommendations, tracking reading progress, and managing community engagement features. By leveraging custom APIs and Functions, we ensure efficient data processing, seamless user interactions, and integration with external services, providing a robust and scalable solution for managing user data and system operations.
+The backbone of ReadWave's functionality lies in its custom backend services, developed using PHP and JavaScript. These services handle critical tasks such as user authentication, personalized book recommendations, tracking reading progress, and managing community engagement features. By leveraging custom APIs and Functions, we ensure efficient data processing, seamless user interactions, and integration with external services, providing a robust and scalable solution for managing user data and system operations.
 
 ### Database (Custom Database Management):
-The heart of ReadWave Explorer's data management system is a custom-built database, designed using MySQL and integrated seamlessly into the platform. This database stores structured data related to user profiles, personality quiz responses, recommended books, and community interactions. Through careful design and optimization, we ensure real-time updates, efficient data retrieval, and seamless integration with other platform components, supporting our growth and enhancing user engagement.
+The heart of ReadWave's data management system is a custom-built database, designed using MySQL and integrated seamlessly into the platform. This database stores structured data related to user profiles, personality quiz responses, recommended books, and community interactions. Through careful design and optimization, we ensure real-time updates, efficient data retrieval, and seamless integration with other platform components, supporting our growth and enhancing user engagement.
 
 ### External APIs and Integrations:
-In addition to our custom-built components, ReadWave Explorer integrates with external APIs and third-party services to enhance its functionality and provide additional features to our users. This includes integration with book catalog APIs to expand our book database, social media APIs for sharing recommendations, and third-party services for hosting mini-games. These integrations enrich the user experience, providing access to diverse content and fostering engagement within our community.
+In addition to our custom-built components, ReadWave integrates with external APIs and third-party services to enhance its functionality and provide additional features to our users. This includes integration with book catalog APIs to expand our book database and social media APIs for sharing recommendations. These integrations enrich the user experience, providing access to diverse content and fostering engagement within our community.
 
 ### Admin Panel (Custom Dashboard):
 Our administrators wield powerful tools through a custom-built Admin Panel, accessible directly from our platform. This dashboard empowers them to manage content, monitor user activities, and administer the platform effectively. Integrated with our custom backend services, the Admin Panel enables seamless data management, content moderation, and system monitoring, empowering administrators to make informed decisions and drive platform growth.
@@ -164,11 +166,11 @@ In preparing test cases, I will encompass various scenarios, including normal in
 For unit testing in JavaScript, I will employ Jest, a renowned testing framework celebrated for its simplicity and efficacy. Jest offers robust assertion utilities and mocking capabilities, making it an ideal choice for testing JavaScript code.
 
 ## Setting up Jest:
-To set up
+To set up Jest, I followed these steps:
 
- Jest, I followed these steps:
+**Installation of Node
 
-**Installation of Node.js:** Ensure that Node.js is installed on your system. Node.js provides the runtime environment for executing JavaScript code outside the browser.
+.js:** Ensure that Node.js is installed on your system. Node.js provides the runtime environment for executing JavaScript code outside the browser.
 
 **Creation of package.json:** Initialize a Node.js project by executing the following command in the terminal:
 ```bash
