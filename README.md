@@ -1,5 +1,3 @@
-Got it. Let's revise the documentation to accurately reflect the features of ReadWave. The final website will focus on displaying the top books of the week and a personality quiz to reveal personalized book recommendations. Here's the updated documentation:
-
 # Project Title: ReadWave
 
 **Project Creator:** Brus Hoxha  
